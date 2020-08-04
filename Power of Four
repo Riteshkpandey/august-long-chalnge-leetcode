@@ -1,0 +1,32 @@
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+
+Example 1:
+
+Input: 16
+Output: true
+Example 2:
+
+Input: 5
+Output: false
+
+
+
+
+
+class Solution(object):
+    def isPowerOfFour(self, num):
+        m=num
+        n=bin(num)
+        n=n.replace("0b","")
+        l=len(n)-1
+        n=int(n)
+        o=bin(m)
+        o=o.replace("0b","")
+        o=int(o)
+        if (o&1<<l)==m:
+            if len(bin(num))%2!=0 and num!=0:
+                return True
+            
+        else:
+            return False
+                
