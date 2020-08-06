@@ -1,0 +1,26 @@
+given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+Find all the elements that appear twice in this array.
+
+Could you do it without extra space and in O(n) runtime?
+
+
+
+class Solution(object):
+    def findDuplicates(self, nums):
+        d={}
+        l=[]
+        for i in nums:
+            if i not in d:
+                d[i]=1
+            else:
+                d[i]+=1
+                l.append(i)
+        return l        
+        
+        
+        
+
+
+
+
