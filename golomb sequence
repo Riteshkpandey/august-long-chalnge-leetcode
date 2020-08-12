@@ -22,4 +22,5 @@ for _ in range(int(input())):
     Golomb(a,b)
     #print(dp)
    
+   
     print(sm)    
