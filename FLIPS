@@ -5,8 +5,7 @@ Your aim is to perform ATMOST one operation such that in final string number of 
 Notes:
 
 Pair (a, b) is lexicographically smaller than pair (c, d) if a < c or, if a == c and b < d.
-For example,
-
+For example
 S = 010
 
 Pair of [L, R] | Final string
