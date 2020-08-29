@@ -43,11 +43,7 @@ SAMPLE OUTPUT :
 
 
 
-
-
-
-
-
+solution:
 
 def dfs(node,dis):
         vis[node]=1
