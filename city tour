@@ -8,7 +8,6 @@ Find the number of ways in which you can visit all the cities modulo 10^9+7.
 
 Input Format
 
-
 The 1st argument given is an integer A, i.e total number of cities.
 The 2nd argument given is an integer array B, where B[i] denotes ith city you already visited.
 Output Format
