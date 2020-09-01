@@ -9,13 +9,7 @@ return [1,6],[8,10],[15,18].
 Make sure the returned intervals are sorted.
 
 
-
-
-
-
-
-
-
+solution:
 # Definition for an interval.
 # class Interval:
 #     def __init__(self, s=0, e=0):
