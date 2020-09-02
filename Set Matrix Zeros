@@ -36,3 +36,37 @@ Output 2:
         [1, 0, 1],
         [0, 0, 0]   ]
         
+
+
+
+
+
+
+
+solution:
+class Solution:
+    # @param A : list of list of integers
+    # @return the same list modified
+    def setZeroes(self, A):
+        N=len(A)
+        n=len(A[0])
+        iarr=set()
+        jarr=set()
+    
+        for i in range(N):
+            for j in range(n):
+                if A[i][j]==0:
+                    if i not in iarr:
+                        iarr.add(i)
+                    if j not in jarr:
+                        jarr.add(j)
+                        
+        for val in iarr:
+            for j in range(n):
+                A[val][j]=0
+        for val in jarr:
+            for i in range(N):
+                A[i][val]=0
+                
+        return A
+    
