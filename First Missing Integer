@@ -12,12 +12,6 @@ Your algorithm should run in O(n) time and use constant space.
 
 
 
-
-
-
-
-
-
 solution:-
 class Solution:
     # @param A : list of integers
