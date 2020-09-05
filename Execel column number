@@ -1,4 +1,5 @@
-res = 0
+solution...
+        res = 0
 
         for i in range(len(A)):
 
