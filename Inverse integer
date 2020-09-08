@@ -8,5 +8,7 @@ B = abs(A)
     else:
         if A >= 0:
             return c
-        else:
+        
+    else:
             return -c
+
