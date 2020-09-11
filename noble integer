@@ -1,0 +1,15 @@
+from collections import Counter
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        #print(*A)
+        m=Counter(A)
+        n=len(A)
+        A.sort()
+        for i in range(n):
+            fwd=n-i-m[A[i]]
+            if fwd==A[i]:
+                return 1
+            m[A[i]]-=1
+        return -1
