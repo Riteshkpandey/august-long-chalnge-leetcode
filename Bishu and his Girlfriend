@@ -36,32 +36,32 @@ SAMPLE OUTPUT :
 
 Solution:
 
-def dfs(node,dis):
-        vis[node]=1
-        distance[node]=dis
-        for i in d[node]:
-                if vis[i]==0:
-                        dfs(i,distance[node]+1)
+        def dfs(node,dis):
+                vis[node]=1
+                distance[node]=dis
+                for i in d[node]:
+                        if vis[i]==0:
+                                dfs(i,distance[node]+1)
 
 
-n=int(input())
-d={}
-for i in range(n-1):
-        u,v=map(int,input().split())
+        n=int(input())
+        d={}
+        for i in range(n-1):
+                u,v=map(int,input().split())
 
-        d[u]=d.get(u,[])+[v]
-        d[v]=d.get(v,[])+[u]
-distance=[0]*(n+1)
-vis=[0]*(n+1)
-dfs(1,0)
-ans=0
-mn=9999999999999
-for i in range(int(input())):
-        m=int(input())
-        if distance[m]<mn:
-                mn=distance[m]
-                ans=m
-print(ans)                
+                d[u]=d.get(u,[])+[v]
+                d[v]=d.get(v,[])+[u]
+        distance=[0]*(n+1)
+        vis=[0]*(n+1)
+        dfs(1,0)
+        ans=0
+        mn=9999999999999
+        for i in range(int(input())):
+                m=int(input())
+                if distance[m]<mn:
+                        mn=distance[m]
+                        ans=m
+        print(ans)                
 
 
 
