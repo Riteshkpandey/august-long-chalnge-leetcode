@@ -3,7 +3,6 @@ Bishu lives in the Country 1 so this can be considered as the root of the tree .
 Now there are Q girls who lives in various countries (not equal to 1) .
 All of them want to propose Bishu.But Bishu has some condition.
 He will accept the proposal of the girl who  lives at minimum distance from his country.
-
 Now the distance between two countries is the number of roads between them.
 
 If two or more girls are at the same minimum distance then he will accept the proposal of the girl who lives in a country with minimum id.
