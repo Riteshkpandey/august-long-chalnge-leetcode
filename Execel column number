@@ -1,6 +1,5 @@
 solution...
         res = 0
         for i in range(len(A)):
-            res+= (ord(A[i])-64)*(26**(len(A)-i-1))
-
-     return res
+            res+= (ord(A[i])-64)*(26**(len(A)-i
+ return res
