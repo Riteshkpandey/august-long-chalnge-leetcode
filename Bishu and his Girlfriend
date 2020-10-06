@@ -6,7 +6,6 @@ He will accept the proposal of the girl who  lives at minimum distance from his 
 Now the distance between two countries is the number of roads between them.
 If two or more girls are at the same minimum distance then he will accept the proposal of the girl who lives in a country with minimum id.
 No two girls are at same country.
-
 Input: First line consists of N,i.e number of countries Next N-1 lines follow the type u v which denotes there is a road between u and v. Next line consists of Q Next Q lines consists of x where the girls live.
 
 Output: Print the id of the country of the girl who will be accepted.
