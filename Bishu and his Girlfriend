@@ -32,24 +32,23 @@ SAMPLE OUTPUT :
 3
 
 Solution:
-
         def dfs(node,dis):
-                vis[node]=1
+                visited[node]=1
                 distance[node]=dis
-                for i in d[node]:
-                        if vis[i]==0:
+                for i in d_array[node]:
+                        if visited[i]==0:
                                 dfs(i,distance[node]+1)
 
 
         n=int(input())
-        d={}
+        d_array={}
         for i in range(n-1):
                 u,v=map(int,input().split())
 
-                d[u]=d.get(u,[])+[v]
-                d[v]=d.get(v,[])+[u]
+                d_array[u]=d_array.get(u,[])+[v]
+                d_array[v]=d_array.get(v,[])+[u]
         distance=[0]*(n+1)
-        vis=[0]*(n+1)
+        visited=[0]*(n+1)
         dfs(1,0)
         ans=0
         mn=9999999999999
