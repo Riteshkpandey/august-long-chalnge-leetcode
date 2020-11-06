@@ -8,6 +8,7 @@ If two or more girls are at the same minimum distance then he will accept the pr
 No two girls are at same country.
 Input: First line consists of N,i.e number of countries Next N-1 lines follow the type u v which denotes there is a road between u and v. Next line consists of Q Next Q lines consists of x where the girls live.
 
+
 Output: Print the id of the country of the girl who will be accepted.
 
 Help Him!!!!!
