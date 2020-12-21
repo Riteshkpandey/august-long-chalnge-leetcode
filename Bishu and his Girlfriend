@@ -13,7 +13,6 @@ Output: Print the id of the country of the girl who will be accepted.
 
 Help Him!!!!!
 
-
 contraints: 2<=N<=1000 1<=u,v<=N 1<=Q<=(N-1)
 
 SAMPLE INPUT 
